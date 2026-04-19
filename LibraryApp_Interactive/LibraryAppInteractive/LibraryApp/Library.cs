@@ -24,7 +24,7 @@ public class Library
     /// </summary>
     public void AddBook(Book book)
     {
-
+        // add the given book to the list of books in the library
     }
 
     /// <summary>
@@ -32,6 +32,11 @@ public class Library
     /// </summary>
     public List<Book> SearchBooks(string title)
     {
+        //create a list to store matching books 
+        // Go through each book in the library 
+            // If the book title matches the given title 
+            //add the book to the result list
+        //return the list of matching books 
         return null;
     }
 
@@ -40,6 +45,7 @@ public class Library
     /// </summary>
     public List<Book> GetBooks()
     {
+        //return the list of all books in the library 
         return null;
     }
 }

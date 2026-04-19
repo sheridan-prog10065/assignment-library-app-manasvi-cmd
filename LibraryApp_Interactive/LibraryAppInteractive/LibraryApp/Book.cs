@@ -52,7 +52,7 @@ public class Book
     /// </summary>
     public void AddAuthor(Author author)
     {
-
+        // Add the given author to the list of authors 
     }
 
     /// <summary>
@@ -60,6 +60,7 @@ public class Book
     /// </summary>
     public void AddAsset(LibraryAsset asset)
     {
+        // Add the given asset to the list of assets 
     }
 
     /// <summary>
@@ -68,6 +69,7 @@ public class Book
     /// <returns></returns>
     public List<LibraryAsset> GetAssets()
     {
+        // Return the list of assets for this book 
         return _assets;
 
     }

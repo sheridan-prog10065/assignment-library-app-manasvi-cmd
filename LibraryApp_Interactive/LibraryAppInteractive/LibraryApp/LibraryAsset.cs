@@ -39,7 +39,9 @@ public class LibraryAsset
     /// </summary>
     public void Borrow()
     {
-
+        // Check If the asset is not already borrowed 
+            // set asset as borrowed
+            // set return date 
     }
 
     /// <summary>
@@ -47,6 +49,7 @@ public class LibraryAsset
     /// </summary>
     public void Return()
     {
-
+        // Set the asste as not borrowed
+        // Clear the reutrn dates 
     }
 }
