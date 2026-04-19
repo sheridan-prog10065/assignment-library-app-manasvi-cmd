@@ -9,4 +9,13 @@ namespace LibraryAppInteractive;
 /// </summary>
 public class Library
 {
+    private List<Book> _books;
+
+    /// <summary>
+    /// Constructor to initialize library
+    /// </summary>
+    public Library()
+    {
+        _books = new List<Book>();
+    }
 }

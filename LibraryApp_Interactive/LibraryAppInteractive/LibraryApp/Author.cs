@@ -15,7 +15,16 @@ public class Author
     private string _firstName;
 
     /// <summary>
-    /// Stores the last name of the author
+    /// Stores the last name of the author//
     /// </summary>
     private string _lastName;
+
+    /// <summary>
+    /// Constructor to initialize author
+    /// </summary>
+    public Author(string firstName, string lastName)
+    {
+        _firstName = firstName;
+        _lastName = lastName;
+    }
 }

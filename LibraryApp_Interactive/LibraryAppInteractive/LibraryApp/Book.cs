@@ -27,10 +27,23 @@ public class Book
     /// <summary>
     /// Stores the Authors of the book
     /// </summary>
-    private List<Author> authors;
+    private List<Author> _authors;
 
     /// <summary>
     /// Stores the Library Assets of the book
     /// </summary>
-    private List<LibraryAsset> assets;
+    private List<LibraryAsset> _assets;
+
+    /// <summary>
+    /// Constructor to initialize book
+    /// </summary>
+    public Book(string title, string isbn, Genre genre)
+    {
+        _title = title;
+        _isbn = isbn;
+        _genre = genre;
+
+        _authors = new List<Author>();
+        _assets = new List<LibraryAsset>();
+    }
 }

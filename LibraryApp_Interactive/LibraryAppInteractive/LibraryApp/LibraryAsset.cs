@@ -23,4 +23,14 @@ public class LibraryAsset
     /// Stores the return date for the book 
     /// </summary>
     private string _returndate;
+
+    /// <summary>
+    /// Constructor to initialize asset
+    /// </summary>
+    public LibraryAsset(int id)
+    {
+        _id = id;
+        _isBorrowed = false;
+        _returndate = "";
+    }
 }
