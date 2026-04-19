@@ -18,4 +18,28 @@ public class Library
     {
         _books = new List<Book>();
     }
+
+    /// <summary>
+    /// Adds a book to the library
+    /// </summary>
+    public void AddBook(Book book)
+    {
+
+    }
+
+    /// <summary>
+    /// Serches for books by title
+    /// </summary>
+    public List<Book> SearchBooks(string title)
+    {
+        return null;
+    }
+
+    /// <summary>
+    /// Gets all book in the library 
+    /// </summary>
+    public List<Book> GetBooks()
+    {
+        return null;
+    }
 }

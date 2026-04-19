@@ -46,4 +46,29 @@ public class Book
         _authors = new List<Author>();
         _assets = new List<LibraryAsset>();
     }
+
+    /// <summary>
+    /// Adds an author to the boook
+    /// </summary>
+    public void AddAuthor(Author author)
+    {
+
+    }
+
+    /// <summary>
+    /// Adds a library asset to the book 
+    /// </summary>
+    public void AddAsset(LibraryAsset asset)
+    {
+    }
+
+    /// <summary>
+    /// Gets all assets of the book
+    /// </summary>
+    /// <returns></returns>
+    public List<LibraryAsset> GetAssets()
+    {
+        return _assets;
+
+    }
 }

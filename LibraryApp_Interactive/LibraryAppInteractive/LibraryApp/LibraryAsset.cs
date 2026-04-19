@@ -33,4 +33,20 @@ public class LibraryAsset
         _isBorrowed = false;
         _returndate = "";
     }
+
+    /// <summary>
+    /// Borrows the asset
+    /// </summary>
+    public void Borrow()
+    {
+
+    }
+
+    /// <summary>
+    /// Returns the asset
+    /// </summary>
+    public void Return()
+    {
+
+    }
 }
