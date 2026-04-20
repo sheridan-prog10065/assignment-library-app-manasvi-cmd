@@ -5,8 +5,46 @@
              x:Class="LibraryAppInteractive.LibraryAdminPage"
              Title="Manage Book Assets">
     <ContentPage.Content>
-        <Label Text="Library Admin page for the Interactive Library App"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"/>         
+        <ScrollView>
+            <VerticalStackLayout Spacing="12">
+
+                <Label Text="Library Administration"
+                       HorizontalOptions="Center" />
+
+                <Label Text="Book Title" />
+                <Entry x:Name="TitleEntry"
+                   Placeholder="Enter book title" />
+
+                <Label Text="ISBN" />
+                <Entry x:Name="IsbnEntry"
+                   Placeholder="Enter ISBN" />
+
+                <Label Text="Genre" />
+                <Picker x:Name="GenrePicker"
+                    Title="Select a genre" />
+
+                <Label Text="Author First Name" />
+                <Entry x:Name="AuthorFirstNameEntry"
+                   Placeholder="Enter author's first name" />
+
+                <Label Text="Author Last Name" />
+                <Entry x:Name="AuthorLastNameEntry"
+                   Placeholder="Enter author's last name" />
+
+                <Label Text="Asset ID" />
+                <Entry x:Name="AssetIdEntry"
+                   Placeholder="Enter asset id"
+                   Keyboard="Numeric" />
+
+                <Button x:Name="AddBookButton"
+                    Text="Add Book"
+                    Clicked="AddBookButton_Clicked" />
+
+                <Label x:Name="AdminMessageLabel"
+                   Text=""
+                   FontSize="16" />
+
+            </VerticalStackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
