@@ -9,7 +9,7 @@ namespace LibraryAppInteractive;
 public partial class LibraryAdminPage : ContentPage
 {
     public LibraryAdminPage()
-    {        
+    {
         InitializeComponent();
         GenrePicker.ItemsSource = Enum.GetNames(typeof(Genre)).ToList();
     }

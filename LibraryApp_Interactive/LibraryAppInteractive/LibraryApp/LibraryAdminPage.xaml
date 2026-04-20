@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <ScrollView>
             <VerticalStackLayout Spacing="12">
-
+                
                 <Label Text="Library Administration"
                        HorizontalOptions="Center" />
 
@@ -45,6 +45,6 @@
                    FontSize="16" />
 
             </VerticalStackLayout>
-        </ScrollView>
+        </ScrollView>       
     </ContentPage.Content>
 </ContentPage>
