@@ -2,9 +2,71 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LibraryAppInteractive.LibraryBrowsePage"
-             Title="Browse Interactive Library">
-			 
-	<Label Text="Browse Library page for the Interactive Library App"
-	       HorizontalOptions="Center"
-	       VerticalOptions="Center"/> 
+             Title="Browse Library">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="14">
+
+                <Label Text="Library Browse"
+                       FontSize="24"
+                       HorizontalOptions="Center" />
+
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Main Menu"
+                               FontAttributes="Bold"
+                               FontSize="18" />
+
+                        <Label Text="Book Title" />
+                        <Entry x:Name="TitleEntry"
+                               Placeholder="Enter book title" />
+
+                        <Label Text="ISBN" />
+                        <Entry x:Name="IsbnEntry"
+                               Placeholder="Enter ISBN" />
+
+                        <Button Text="Select Book"
+                                Clicked="SelectBookButton_Clicked" />
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Book Menu"
+                               FontAttributes="Bold"
+                               FontSize="18" />
+
+                        <Button Text="Check Status"
+                                Clicked="CheckStatusButton_Clicked" />
+
+                        <Button Text="Borrow Book"
+                                Clicked="BorrowBookButton_Clicked" />
+
+                        <Label Text="Asset ID to Return" />
+                        <Entry x:Name="AssetIdEntry"
+                               Placeholder="Enter asset id"
+                               Keyboard="Numeric" />
+
+                        <Button Text="Return Book"
+                                Clicked="ReturnBookButton_Clicked" />
+
+                        <Button Text="Display Book Assets"
+                                Clicked="DisplayAssetsButton_Clicked" />
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Output"
+                               FontAttributes="Bold"
+                               FontSize="18" />
+
+                        <Label x:Name="BrowseMessageLabel"
+                               Text="" />
+
+                        <ScrollView HeightRequest="200">
+                            <VerticalStackLayout x:Name="AssetsLayout"
+                                                 Spacing="8" />
+                        </ScrollView>
+                    </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
 </ContentPage>

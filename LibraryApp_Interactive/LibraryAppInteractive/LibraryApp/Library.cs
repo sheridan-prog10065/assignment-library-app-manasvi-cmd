@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace LibraryAppInteractive;
 
 /// <summary>
@@ -9,4 +11,46 @@ namespace LibraryAppInteractive;
 /// </summary>
 public class Library
 {
+    private List<Book> _books;
+
+    /// <summary>
+    /// Constructor to initialize library
+    /// </summary>
+    public Library()
+    {
+        _books = new List<Book>();
+    }
+    
+
+    /// <summary>
+    /// Adds a book to the library
+    /// </summary>
+    public void AddBook(Book book)
+    {
+        // add the given book to the list of books in the library
+        _books.Add(book);
+    }
+
+    /// <summary>
+    /// Serches for books by title
+    /// </summary>
+    public List<Book> SearchBooks(string title)
+    {
+        //create a list to store matching books 
+        // Go through each book in the library 
+            // If the book title matches the given title 
+            //add the book to the result list
+        //return the list of matching books 
+        List<Book> matchingBooks = new List<Book>();
+        return matchingBooks;
+    }
+
+    /// <summary>
+    /// Gets all book in the library 
+    /// </summary>
+    public List<Book> GetBooks()
+    {
+        //return the list of all books in the library 
+        return _books ;
+    }
 }
