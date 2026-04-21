@@ -53,6 +53,7 @@ public class Book
     public void AddAuthor(Author author)
     {
         // Add the given author to the list of authors 
+        _authors.Add(author);
     }
 
     /// <summary>
@@ -61,16 +62,38 @@ public class Book
     public void AddAsset(LibraryAsset asset)
     {
         // Add the given asset to the list of assets 
+        _assets.Add(asset);
     }
-
+    
     /// <summary>
     /// Gets all assets of the book
     /// </summary>
-    /// <returns></returns>
     public List<LibraryAsset> GetAssets()
     {
-        // Return the list of assets for this book 
-        return _assets;
-
+        return _assets; 
     }
+
+
+    public override string ToString()
+    {
+        return _title; 
+    }
+
+
+    /// <summary>
+    /// Gets the title of the book.
+    /// </summary>
+    public string Title
+    {
+        get { return _title; }
+    }
+
+    /// <summary>
+    /// Gets the ISBN of the book.
+    /// </summary>
+    public string ISBN
+    {
+        get { return _isbn; }
+    }
+
 }

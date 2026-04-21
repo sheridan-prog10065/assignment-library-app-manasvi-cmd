@@ -33,9 +33,8 @@
 
                 <Label Text="Asset ID" />
                 <Entry x:Name="AssetIdEntry"
-                   Placeholder="Enter asset id"
-                   Keyboard="Numeric" />
-
+                   Placeholder="Enter asset id" />
+                
                 <Button x:Name="AddBookButton"
                     Text="Add Book"
                     Clicked="AddBookButton_Clicked" />
